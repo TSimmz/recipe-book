@@ -1,13 +1,29 @@
 import React from 'react';
 
 const Navbar = () => {
-  return (
-    <nav>
-      <h1>Recipe Book</h1>
+  const isLoggedIn = true;
+
+  const renderLoginSignup = () => {
+    return (
       <ul>
         <button>Login</button>
         <button>Sign Up</button>
       </ul>
+    );
+  };
+
+  const renderAccount = () => {
+    return (
+      <div>
+        <img />
+      </div>
+    );
+  };
+
+  return (
+    <nav>
+      <h1>Recipe Book</h1>
+      {isLoggedIn ? renderLoginSignup() : renderAccount()}
     </nav>
   );
 };
