@@ -1,9 +1,13 @@
-const RecipePage = () => {
+const RecipePage = ({ recipe }) => {
   const renderServingSize = () => {
     return 0;
   };
-  //const renderIngredients = () => {};
-  //const renderSteps = () => {};
+  const renderIngredients = () => {
+    return <h2>Ingredients</h2>;
+  };
+  const renderSteps = () => {
+    return <h2>Steps</h2>;
+  };
 
   return (
     <div>
@@ -14,9 +18,8 @@ const RecipePage = () => {
         <span>{`Cook Time: ${0}`}</span>
         <span>{`Serving Size: ${0}`}</span>
       </p>
-      <h2>Ingredients</h2>
-      {/*renderIngredients()*/}
-      {/*renderSteps()*/}
+      {renderIngredients()}
+      {renderSteps()}
     </div>
   );
 };

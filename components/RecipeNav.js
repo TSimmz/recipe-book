@@ -7,25 +7,29 @@ const RecipeNav = () => {
   const isSidebarOpen = true;
   const bookPath = 'TestBook > TestRecipe';
 
-  // const renderRecipeBookPath = () => {
-  //   return <h3>{bookPath}</h3>;
-  // };
+  const renderRecipeBookPath = () => {
+    return <h3>{bookPath}</h3>;
+  };
 
-  // const renderCreateButton = () => {
-  //   return (
-  //     <button>
-  //       <p>Create</p>
-  //       <PlusCircle />
-  //     </button>
-  //   );
-  // };
+  const renderCreateButton = () => {
+    return (
+      <button>
+        <p>Create</p>
+        <PlusCircle />
+      </button>
+    );
+  };
 
   return (
     <nav>
-      <h3>{bookPath}</h3>
-      {/*renderRecipeBookPath()*/}
-      <div></div>
-      {/*isSidebarOpen && renderCreateButton()*/}
+      <Hamburger />
+      <h3>{renderRecipeBookPath()}</h3>
+
+      <div>
+        <Edit />
+        <Gear />
+      </div>
+      {!isSidebarOpen && renderCreateButton()}
     </nav>
   );
 };

@@ -8,9 +8,9 @@ const Dashboard = () => {
     <Layout className='flex flex-col items-center justify-center min-h-screen py-2'>
       <h1>Dashboard</h1>
       <RecipeNav />
-      {/*<Sidebar />*/}
-      {/*<Sidebar />*/}
-      {/*<RecipePage recipe={{ title: 'Title', cookTime: 'Cook-Time' }} />*/}
+      <Sidebar type='Books' />
+      <Sidebar type='Recipes' />
+      <RecipePage recipe={{ title: 'Title', cookTime: 'Cook-Time' }} />
     </Layout>
   );
 };
