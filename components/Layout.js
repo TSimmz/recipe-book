@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         {/*<link rel="icon" href="/favicon.ico" />*/}
       </Head>
       <Navbar />
-      {children}
+      <main>{children}</main>
     </>
   );
 };
