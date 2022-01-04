@@ -1,19 +1,21 @@
 import Layout from '../components/Layout';
 
-const Login = () => {
+const Signup = () => {
   return (
     <Layout>
-      <form className='login-form'>
+      <form className='signup-form'>
+        <p>Name</p>
+        <input type='text' />
         <p>Username</p>
         <input type='text' />
         <p>Password</p>
         <input type='password' />
         <button type='submit' className='loginButton'>
-          Login
+          Signup
         </button>
       </form>
     </Layout>
   );
 };
 
-export default Login;
+export default Signup;

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
@@ -6,8 +7,15 @@ const Navbar = () => {
   const renderLoginSignup = () => {
     return (
       <ul>
-        <button className='loginButton'>Login</button>
-        <button className='signupButton'>Sign Up</button>
+        <button className='loginButton'>
+          <Link href='/dashboard'>Dashboard</Link>
+        </button>
+        <button className='loginButton'>
+          <Link href='/login'>Login</Link>
+        </button>
+        <button className='signupButton'>
+          <Link href='/signup'>Sign Up</Link>
+        </button>
       </ul>
     );
   };
@@ -22,7 +30,9 @@ const Navbar = () => {
 
   return (
     <nav>
-      <h1>Recipe Book</h1>
+      <h1>
+        <Link href='/'>Recipe Book</Link>
+      </h1>
       {isLoggedIn ? renderLoginSignup() : renderAccount()}
     </nav>
   );
