@@ -6,8 +6,8 @@ const Navbar = () => {
   const renderLoginSignup = () => {
     return (
       <ul>
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button className='loginButton'>Login</button>
+        <button className='signupButton'>Sign Up</button>
       </ul>
     );
   };

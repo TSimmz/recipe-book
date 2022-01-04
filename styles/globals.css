@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  height: 100vh;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #ffc163;
+  padding: 0 1.5rem;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header > nav > h1 {
+  font-size: 24px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.signupButton {
+  background-color: #fff0bb;
+  width: 90px;
+  border-radius: 20px;
+  padding: 4px 0;
+
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.signupButton:hover {
+  background-color: #fff0bb77;
+}
+
+.loginButton {
+  width: 90px;
+  padding: 4px 0;
+  color: white;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.loginButton:hover {
+  background-color: #00000011;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: end;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.hero-tagline {
+  font-size: 36px;
+}

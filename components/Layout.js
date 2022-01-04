@@ -9,8 +9,11 @@ const Layout = ({ children }) => {
         <title>Recipe Books</title>
         {/*<link rel="icon" href="/favicon.ico" />*/}
       </Head>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <main>{children}</main>
+      <footer></footer>
     </>
   );
 };

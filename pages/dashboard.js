@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 
 const Dashboard = () => {
   return (
-    <Layout className='flex flex-col items-center justify-center min-h-screen py-2'>
+    <Layout>
       <h1>Dashboard</h1>
       <RecipeNav />
       <Sidebar type='Books' />
