@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 const Login = () => {
   return (
     <Layout>
-      <form className='login-form'>
+      <form className='form login-form'>
         <p>Username</p>
         <input type='text' />
         <p>Password</p>
