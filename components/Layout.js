@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import React from 'react';
 import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
@@ -7,7 +6,10 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>Recipe Books</title>
-        {/*<link rel="icon" href="/favicon.ico" />*/}
+        <link
+          href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap'
+          rel='stylesheet'
+        />
       </Head>
       <header>
         <Navbar />
