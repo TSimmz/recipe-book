@@ -11,10 +11,10 @@ const Layout = ({ children }) => {
           rel='stylesheet'
         />
       </Head>
-      <header className='w-full h-14 px-6 bg-orange-300'>
+      <header className='w-full h-[50px] px-6 bg-orange-300 absolute'>
         <Navbar />
       </header>
-      <main className='flex justify-center items-center h-fit'>{children}</main>
+      <main className='flex justify-center h-screen pt-[50px]'>{children}</main>
       <footer></footer>
     </>
   );

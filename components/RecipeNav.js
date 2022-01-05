@@ -21,15 +21,23 @@ const RecipeNav = () => {
   };
 
   return (
-    <nav>
-      <Hamburger />
-      <h3>{renderRecipeBookPath()}</h3>
-
-      <div>
-        <Edit />
-        <Gear />
+    <nav className='flex justify-between items-center px-6 bg-orange-400 h-[35px] w-full'>
+      <div className='flex gap-4'>
+        <button>
+          <Hamburger />
+        </button>
+        {renderRecipeBookPath()}
       </div>
-      {!isSidebarOpen && renderCreateButton()}
+
+      <div className='flex gap-4'>
+        <button>
+          <Edit />
+        </button>
+        <button>
+          <Gear />
+        </button>
+        {!isSidebarOpen && renderCreateButton()}
+      </div>
     </nav>
   );
 };

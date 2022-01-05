@@ -6,11 +6,14 @@ import Sidebar from '../components/Sidebar';
 const Dashboard = () => {
   return (
     <Layout>
-      <h1>Dashboard</h1>
-      <RecipeNav />
-      <Sidebar type='Books' />
-      <Sidebar type='Recipes' />
-      <RecipePage recipe={{ title: 'Title', cookTime: 'Cook-Time' }} />
+      <div className='w-full flex flex-col h-full'>
+        <RecipeNav />
+        <div className='flex h-full'>
+          <Sidebar type='Books' />
+          <Sidebar type='Recipes' />
+          <RecipePage recipe={{ title: 'Title', cookTime: 'Cook-Time' }} />
+        </div>
+      </div>
     </Layout>
   );
 };

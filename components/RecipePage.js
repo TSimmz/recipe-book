@@ -3,18 +3,18 @@ const RecipePage = ({ recipe }) => {
     return 0;
   };
   const renderIngredients = () => {
-    return <h2>Ingredients</h2>;
+    return <h2 className='text-2xl underline mb-8'>Ingredients</h2>;
   };
   const renderSteps = () => {
-    return <h2>Steps</h2>;
+    return <h2 className='text-2xl underline'>Steps</h2>;
   };
 
   return (
-    <div>
-      <div>
-        <h1>{recipe.title}</h1>
+    <div className='bg-yellow-100 w-full px-16 py-12 overflow-hidden'>
+      <div className='px-4 py-5 border-b-4 border-black mb-4'>
+        <h1 className='text-5xl'>{recipe.title}</h1>
       </div>
-      <p>
+      <p className='italic flex gap-4 mb-8'>
         <span>{`Cook Time: ${0}`}</span>
         <span>{`Serving Size: ${0}`}</span>
       </p>

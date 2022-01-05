@@ -3,17 +3,19 @@ import Layout from '../components/Layout';
 const Signup = () => {
   return (
     <Layout>
-      <form className='signup-form'>
-        <p>Name</p>
-        <input type='text' />
-        <p>Username</p>
-        <input type='text' />
-        <p>Password</p>
-        <input type='password' />
-        <button type='submit' className='loginButton'>
-          Signup
-        </button>
-      </form>
+      <div className='flex justify-center items-center w-full h-full'>
+        <form className='form text-xl '>
+          <p>Name</p>
+          <input type='text' className='form-input' />
+          <p>Username</p>
+          <input type='text' className='form-input' />
+          <p>Password</p>
+          <input type='password' className='form-input' />
+          <button type='submit' className='btn btn-dark btn-form self-center'>
+            Signup
+          </button>
+        </form>
+      </div>
     </Layout>
   );
 };

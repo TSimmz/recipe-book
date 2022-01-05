@@ -8,10 +8,12 @@ const Sidebar = ({ type }) => {
   };
 
   return (
-    <aside>
-      <div>
-        <h1>{type}</h1>
-        <PlusCircle />
+    <aside className='w-[220px] py-4 px-4 bg-amber-200 overflow-hidden'>
+      <div className='flex border-b-2 border-black px-1 py-2 justify-between'>
+        <h1 className='text-xl '>{type}</h1>
+        <button>
+          <PlusCircle />
+        </button>
       </div>
       {/*renderRecipeList()*/}
     </aside>
