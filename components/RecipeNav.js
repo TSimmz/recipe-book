@@ -1,6 +1,7 @@
 import Hamburger from '../assets/icons/hamburger.svg';
 import Gear from '../assets/icons/gear.svg';
 import Edit from '../assets/icons/edit.svg';
+import TrashCan from '../assets/icons/trash.svg';
 import PlusCircle from '../assets/icons/plus-circle-outlined.svg';
 
 const RecipeNav = () => {
@@ -30,6 +31,9 @@ const RecipeNav = () => {
       </div>
 
       <div className='flex gap-4'>
+        <button>
+          <TrashCan />
+        </button>
         <button>
           <Edit />
         </button>
